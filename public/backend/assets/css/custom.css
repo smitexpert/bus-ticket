@@ -1,0 +1,28 @@
+/* Write your custom CSS here */
+
+.ui-autocomplete {
+    z-index: 9999;
+}
+
+.modal-view {
+    display: none;
+}
+
+.modal-view.show {
+    display: block;
+}
+
+.table-custom {
+    width: 100%;
+}
+
+.table-custom td, .table-custom th {
+    border: 1px dashed #666666;
+}
+
+.close_bording {
+    float: right;
+    border: none;
+    background: none;
+    color: red;
+}

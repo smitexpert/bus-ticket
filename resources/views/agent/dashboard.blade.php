@@ -1,0 +1,1 @@
+@extends('agent.layout.main')

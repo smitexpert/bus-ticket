@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap');
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    margin: 0;
+}
+
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.loading {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(000, 000, 000, 0.2);
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading.show {
+    display: flex;
+}
+
+.loading img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-fluid {
+    padding: 0 32px;
+}
+
+section.navigation nav {
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+section.contents {
+    width: 100%;
+}
+
+.top-nav .top-bar-title {
+    font-size: 22px;
+}
+
+.top-nav .top-bar-title a {
+    color: #ffffff;
+}
+
+.top-nav .top-bar-title a:hover {
+    text-decoration: none;
+}
+
+.top-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    background: linear-gradient(to bottom,#051322,#15457c);
+    display: block;
+}
+
+.top-bar-logo {
+    height: 100px;
+    width: auto;
+}
+
+.top-section .top-nav {
+    padding: 5px 0;
+}
+
+.service-area {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    margin-top: -40px;
+}
+
+.service-list {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 1px 0px 5px 0px;
+}
+
+.service-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-list ul li a {
+    padding: 10px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4d4d4d;
+    min-width: 50px;
+}
+
+.service-list ul li a.active {
+    color: #007bff;
+    border-bottom: 5px solid #007bff;
+}
+
+.service-list ul li a:hover {
+    text-decoration: none;
+}
+
+.container-half {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.select-area {
+    margin-top: 10vh;
+}
+
+.option {
+    display: none;
+}
+
+.option_show {
+    display: block;
+}
+
+.option label {
+    border: 1px solid #cccccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.option label .title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.option label .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-input {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.show-input {
+    display: block;
+}
+
+.icon-input span {
+    position: absolute;
+    color: #333333;
+    margin-left: 15px;
+    z-index: 999;
+    top: 0;
+    margin-top: -40px;
+}
+
+.search-form {
+    width: 100%;
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+/* Search Box Style */
+
+.search-form label {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.search-form input,
+.search-form select {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-top: -5px;
+}
+
+.search-form input.form-control {
+    height: auto;
+    background: none;
+}
+
+.icon-input input, .icon-input select {
+    position: absolute;
+    padding-left: 30px;
+    top: 0;
+    margin-top: -50px;
+    width: 90%;
+    margin-left: 5px;
+}
+
+
+.icon-input .class-pop {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    margin-top: -80px;
+}
+
+.icon-input .class-pop label {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-input .class-pop select {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.btn_search {
+    position: absolute;
+    width: 260px;
+    left: 50%;
+    margin-left: -130px;
+    /* z-index: 999; */
+    background-image: linear-gradient(96deg, #53b2fe, #065af3);
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: -5px;
+}
+
+.btn_search:focus {
+    outline: none;
+}
+
+section.banner_ads {
+    background-color: #ffffff;
+}
+
+section.banner_ads .ads_place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+
+section.super_offer {
+    background-color: #ececec;
+    padding: 60px 0;
+}
+
+section.super_offer .offer_title {
+    color: #333333;
+    font-size: 48px;
+}
+
+section.super_offer .card_link {
+    color: #333333;
+    font-size: 16px;
+}
+
+section.super_offer .card_link {
+    text-decoration: none;
+}
+
+.bold-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f0f0f;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.bold-title::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: red;
+    bottom: 0;
+}
+
+.slider-item a {
+    text-decoration: none;
+}
+
+.shadow-text {
+    font-size: 14px;
+    line-height: 14px;
+    color: #646464;
+    font-weight: bold;
+}
+
+.book-now {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 30px;
+    color: #257bfd;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+#custom_control {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px rgba(000, 000, 000, 0.2)
+}
+
+#custom_control li {
+    display: inline-block;
+    padding: 2px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #257bfd;
+    line-height: 0;
+}
+
+#custom_control li:focus {
+    outline: none;
+}
+
+.search_result_table {
+    text-align: center;
+}
+
+.search_result_table .bus_result_tr {
+    display: none;
+}
+
+.search_result_table .bus_result_tr.show {
+    display: table-row;
+}
+
+.search_result_table .bus_info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.search_result_table .bus_info .op_name {
+    font-weight: bold;
+}
+
+.search_result_table .bus_info .bus_type {
+    font-size: 12px;
+    color: #414141;
+}
+
+.search_result_table .ratings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.search_result_table .ratings li {
+    margin: 0 2px;
+    color: #ffd000;
+}
+
+.search_result_table .charge {
+    width: 100%;
+    text-align: right;
+}
+
+.search_result_table .view-btn {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.bus-ticket-process {
+    display: none;
+}
+
+.bus-ticket-process.show {
+    display: block;
+}
+
+#showSeats {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#showSeats #frontSide {
+    display: flex;
+    justify-content: space-around;
+}
+
+#showSeats #frontSide .ec-item .btn {
+    margin: 2px 0;
+}
+
+#showSeats .seat_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#showSeats .seat_row .seat_col {
+    width: 40px;
+    margin: 0 2px;
+}
+
+.result_area {
+    display: none;
+}
+
+.result_area_show {
+    display: block;
+}
+
+.pad-top-bottom-20 {
+    padding: 20px 0;
+}
+
+.mar-top-bottom-20 {
+    margin: 20px 0;
+}
+
+.selected_seat .title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.total-charge {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.jurney-details h2 {
+    color: #15457c;
+    border-bottom: 1px solid #15457c;
+    font-size: 22px;
+}
+
+.jurney-details .route-name {
+    width: 100%;
+    display: flex;
+}
+
+.jurney-details .route-name h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #53b2fe;
+    margin: 0;
+    padding: 0;
+}
+
+.jurney-details p.datetime {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.jurney-details .boarding-point {
+    margin-bottom: 3px;
+}
+
+.selected_seat .seat_items {
+    min-height: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.total-charge p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.total-charge h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.bus-ticket-process .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.payment-options {
+    width: 100%;
+    display: flex;
+}
+
+.payment-options .method-item {
+    padding: 0 5px;
+}
+
+.payment-options .method-item label {
+    cursor: pointer;
+}
+
+.payment-options .method-item img {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #646464;
+    border-radius: 6px;
+}
+
+.payment-options .method-item input {
+    display: none;
+}
+
+.payment-options .method-item label img.clicked {
+    border: 3px solid #257bfd;
+}
+
+footer {
+    width: 100%;
+    border-top: 5px solid #257bfd;
+    padding: 30px 0;
+    display: block;
+}
+
+footer h2.footer-site-title {
+    font-size: 46px;
+}
+
+footer h2.footer-site-title a {
+    color: #15457c;
+}
+
+footer h2.footer-site-title a:hover {
+    text-decoration: none;
+}
+
+footer p.footer-about {
+    color: #111111;
+}
+
+footer .footer-title {
+    color: #15457c;
+    font-size: 26px;
+}
+
+footer ul.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+
+footer ul.footer-list li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+footer ul.footer-list li a {
+    color: #111111;
+}
+
+footer ul.footer-list li a:hover {
+    color: #53b2fe;
+}
+
+.seat-type {
+    border: 1px solid #53b2fe;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.seat-type .title {
+    position: absolute;
+    top: 0;
+    margin-top: -5px;
+    color: #257bfd;
+}
+
+label .required::after {
+    position: absolute;
+    content: '*';
+    color: red;
+}
+
+.form-title {
+    width: 100%;
+    border-bottom: 1px solid #257bfd;
+    margin-bottom: 10px;
+}
+
+.form-title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 5px;
+    background-color: #257bfd;
+    display: inline;
+}
+
+.form-sub-title {
+    width: 100%;
+    border-bottom: 2px solid #646464;
+    margin-bottom: 10px;
+}
+
+.form-sub-title h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #646464;
+}
+
+.price_table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.price_table tr {
+    width: 100%;
+}
+
+.price_table td:first-child {
+    width: 37%;
+}
+
+.price_table td {
+    width: 3%;
+}
+
+.price_table td:last-child {
+    width: 60%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.route-map iframe {
+    width: 100%;
+    min-height: 90vh;
+}
+
+.text-box {
+    width: 100%;
+    position: relative;
+    border: 1px solid #15457c;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.text-box p.title {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.text-box p.text {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #53b2fe;
+}
+
+.modal-close-btn {
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    top: 0;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+.modal-close-btn button {
+    font-size: 30px;
+    border: none;
+    background: none;
+    padding: 0;
+    line-height: 0;
+    padding: 5px;
+    margin: 10px 3px 0 0;
+}
+
+.btn.btn-bkash {
+    background-color: #ff00aa;
+    color: #ffffff;
+}
+
+.cancel_ticket_area {
+    display: none;
+    width: 100%;
+}
+
+.cancel_ticket_area.show {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+        table.search_result_table, table.search_result_table thead, table.search_result_table th,
+        table.search_result_table tbody, table.search_result_table td, table.search_result_table tr {
+            display: block;
+        }
+
+        table.search_result_table thead {
+            position: absolute;
+            top: -9999999px;
+            bottom: -9999999px;
+        }
+
+        table.search_result_table td {
+            padding-left: 50%;
+            position: relative;
+            text-align: left;
+        }
+
+        table.search_result_table td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        table.search_result_table td .view-btn {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+    }
